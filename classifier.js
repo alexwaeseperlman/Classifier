@@ -138,4 +138,4 @@ function Classifier() {
 	return classifier;
 }
 
-module.exports = Markov;
+module.exports = Classifier;
