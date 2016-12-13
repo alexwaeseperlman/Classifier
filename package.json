@@ -1,6 +1,6 @@
 {
   "name": "smallclassifier",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Classifier is one of the easiest methods of text classification",
   "main": "classifier.js",
   "repository": {
