@@ -1,6 +1,6 @@
 "use strict";
 
-function Markov() {
+function Classifier() {
 	function clone(input) {
 		let output = {};
 		for (let i in input) {
@@ -31,6 +31,10 @@ function Markov() {
 						text = text.replace(i, '');
 						console.log('Found', i, 'removing it. Text is now', text, 'adding', classifier.data[n][i][k], 'to', k);
 						totals[k] += classifier.data[n][i][k];
+					}
+					if (text.length == 0) {
+						for (let i in totals) totals[i] /= text.split(/ /g).length
+						return totals;
 					}
 				}
 			}
