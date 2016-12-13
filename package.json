@@ -1,5 +1,5 @@
 {
-  "name": "classifier",
+  "name": "smallclassifier",
   "version": "1.0.0",
   "description": "Classifier is one of the easiest methods of text classification",
   "main": "classifier.js",
