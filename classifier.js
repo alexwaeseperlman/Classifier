@@ -26,9 +26,8 @@ function Classifier() {
 		let totals = clone(classifier.categories);
 		for (let n = classifier.data.length - 1; n >= 0; n--) {
 			for (let i in classifier.data[n]) {
-				if (classifier.data[n][i][k] && includes(text, i)) {
+				if (classifier.data[n][i] && includes(text, i)) {
 					text = text.replace(i, '');
-					console.log('Found', i, 'removing it. Text is now', text, 'adding', classifier.data[n][i][k], 'to', k);
 					for (let k in classifier.data[n][i]) totals[k] += classifier.data[n][i][k];
 				}
 				if (text.length == 0) {
