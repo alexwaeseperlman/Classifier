@@ -26,16 +26,14 @@ function Classifier() {
 		let totals = clone(classifier.categories);
 		for (let n = classifier.data.length - 1; n >= 0; n--) {
 			for (let i in classifier.data[n]) {
-				for (let k in classifier.categories) {
-					if (classifier.data[n][i][k] && includes(text, i)) {
-						text = text.replace(i, '');
-						console.log('Found', i, 'removing it. Text is now', text, 'adding', classifier.data[n][i][k], 'to', k);
-						totals[k] += classifier.data[n][i][k];
-					}
-					if (text.length == 0) {
-						for (let i in totals) totals[i] /= text.split(/ /g).length
-						return totals;
-					}
+				if (classifier.data[n][i][k] && includes(text, i)) {
+					text = text.replace(i, '');
+					console.log('Found', i, 'removing it. Text is now', text, 'adding', classifier.data[n][i][k], 'to', k);
+					for (let k in classifier.data[n][i]) totals[k] += classifier.data[n][i][k];
+				}
+				if (text.length == 0) {
+					for (let i in totals) totals[i] /= text.split(/ /g).length
+					return totals;
 				}
 			}
 		}
