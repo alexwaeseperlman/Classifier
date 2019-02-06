@@ -1,5 +1,5 @@
-# Small Classifier
-Small classifier is a lightweight and easy to use text classifier.
+# Text Classification
+This is a model that can be trained to classify text.
 
 ## Training
 ```javascript
