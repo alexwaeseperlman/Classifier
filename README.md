@@ -1,12 +1,12 @@
 # Text Classification
-This is a model that can be trained to classify text.
+This is a model that can be trained to categorize text.
 
 ## Training
 ```javascript
 var Classifier = require('Smallclassifier');
 var classifier = new Classifier();
-classifier.train('Hello there', 'greeting');
-classifier.train('SmallClassifier is awesome!', 'complement');
+classifier.train('Hello there', 'greeting'); // Hello there is a greeting
+classifier.train('SmallClassifier is awesome!', 'complement'); // SmallClassifier is awesome! is a complement
 ```
 
 ## Use
