@@ -2,6 +2,7 @@
 
 ## Text Classification
 This is a model that can be trained to categorize text. It works using the following algorithm:
+
 Training:
 - Split the given record into every possible n-gram (e.g. 'this is an example' would become 'this', 'is', 'an', 'example', 'this is', 'is an', 'an example', 'this is an', 'is an example', 'this is an example').
 - Store each n-gram along with how many times it appeared in documents each class
