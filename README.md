@@ -1,4 +1,4 @@
-# ARCHIVED: I wrote this when I was twelve. It is slow, inaccurate, and should not be used, but at least I a lot!
+# ARCHIVED: I wrote this when I was twelve. It is slow, inaccurate, and should not be used, but I learned a lot!
 
 ## Text Classification
 This is a model that can be trained to categorize text.
