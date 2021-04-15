@@ -1,11 +1,12 @@
-# ARCHIVED: I wrote this when I was twelve. It is slow, inaccurate, and should not be used.
+# ARCHIVED 
+I wrote this when I was twelve. It is slow, inaccurate, and should not be used.
 
 ## Text Classification
-This is a model that can be trained to categorize text. It works using the following algorithm:
+This is an algorithm that can be trained to categorize text. It works using the following logic:
 
 Training:
 - Split the given record into every possible n-gram (e.g. 'this is an example' would become 'this', 'is', 'an', 'example', 'this is', 'is an', 'an example', 'this is an', 'is an example', 'this is an example').
-- Store each n-gram along with how many times it appeared in documents each class
+- Store each n-gram along with how many times it appears in documents of each class.
 
 Classifying:
 - Find each n-gram in the target document that the model has seen before.
